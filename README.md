@@ -14,6 +14,8 @@ A model that maximizes AUC without considering **false rejection cost** is not u
 - **SHAP explanations** for individual decisions
 - **Model card** documenting limitations and intended use
 
+![Risk Band Summary](outputs/figures/risk_band_summary.png)
+
 ---
 
 ## Dataset
@@ -75,6 +77,10 @@ credit-default-risk/
 | Scorecard (WoE + LR) | 0.7649 | Regulatory-friendly format |
 | XGBoost | 0.8694 | Best single model |
 | LightGBM | 0.8702 | Faster training, similar AUC |
+
+![ROC and Precision-Recall Curves](outputs/figures/roc_pr_curves.png)
+
+![Calibration Plot](outputs/figures/calibration.png)
 
 ### Logistic Regression
 
@@ -168,6 +174,10 @@ Final predicted probability          →  73%
 ```
 
 Positive values pushed the score up (more risky), negative values pushed it down (less risky). Add them all up and you get the final prediction.
+
+![SHAP Summary](outputs/figures/shap_summary.png)
+
+![SHAP Waterfall — High Risk Applicant](outputs/figures/shap_waterfall_high_risk.png)
 
 ### Three plots generated in notebook 03
 

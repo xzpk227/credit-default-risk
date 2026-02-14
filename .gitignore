@@ -2,8 +2,10 @@
 data/raw/
 data/processed/
 
-# Trained model binaries
+# Trained model binaries (large, reproducible from notebooks)
 outputs/models/
+
+# Figures are tracked — do NOT ignore outputs/figures/
 
 # Python
 __pycache__/
